@@ -9,6 +9,7 @@ import java.util.List;
 public interface MemberService {
 	//
 	String registerMember(MemberCdo member);
+	List<CommunityMember> findAll();
 	CommunityMember findMemberById(String memberId);
 	CommunityMember findMemberByEmail(String memberEmail);
 	List<CommunityMember> findMembersByName(String name);

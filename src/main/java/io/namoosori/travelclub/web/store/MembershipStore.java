@@ -1,5 +1,6 @@
 package io.namoosori.travelclub.web.store;
 
+import io.namoosori.travelclub.web.aggregate.club.CommunityMember;
 import io.namoosori.travelclub.web.aggregate.club.Membership;
 
 import java.util.List;

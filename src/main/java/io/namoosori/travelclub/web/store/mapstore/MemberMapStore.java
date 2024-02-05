@@ -33,6 +33,7 @@ public class MemberMapStore implements MemberStore {
 		return memberMap.get(memberId);
 	}
 
+
 	@Override
 	public CommunityMember retrieveByEmail(String email) {
 		//
@@ -56,6 +57,7 @@ public class MemberMapStore implements MemberStore {
 				.collect(Collectors.toList());
 	}
 
+
 	@Override
 	public void update(CommunityMember member) {
 		//
@@ -66,6 +68,11 @@ public class MemberMapStore implements MemberStore {
 	public void delete(String memberId) {
 		//
 		memberMap.remove(memberId);
+	}
+
+	@Override
+	public List<CommunityMember> retrieveAll() {
+		return memberMap.values().stream().collect(Collectors.toList());
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package io.namoosori.travelclub.web.store.mapstore;
 
+import io.namoosori.travelclub.web.aggregate.club.CommunityMember;
 import io.namoosori.travelclub.web.aggregate.club.Membership;
 import io.namoosori.travelclub.web.store.MembershipStore;
 import org.springframework.stereotype.Repository;
@@ -81,4 +82,7 @@ public class MembershipMapStore implements MembershipStore {
 		//
 		return Optional.ofNullable(retrieve(membershipId)).isPresent();
 	}
+
+
+
 }

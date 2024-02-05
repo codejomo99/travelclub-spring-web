@@ -47,6 +47,11 @@ public class MemberServiceLogic implements MemberService {
 	}
 
 	@Override
+	public List<CommunityMember> findAll() {
+		return memberStore.retrieveAll();
+	}
+
+	@Override
 	public CommunityMember findMemberById(String memberId) {
 		//
 		return memberStore.retrieve(memberId);
