@@ -32,4 +32,9 @@ public class ClubController {
         return clubService.findClubById(clubId);
     }
 
+    @GetMapping("/club") // localhost:8090/club?name=JavaClub
+    public List<TravelClub> findByName(@RequestParam String name){
+        return clubService.findClubsByName(name);
+    }
+
 }
